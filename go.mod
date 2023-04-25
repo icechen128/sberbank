@@ -1,4 +1,4 @@
-module github.com/helios-ag/sberbank-acquiring-go
+module github.com/icechen128/sberbank
 
 go 1.19
 

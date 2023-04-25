@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
-	acquiring "github.com/helios-ag/sberbank-acquiring-go"
-	"github.com/helios-ag/sberbank-acquiring-go/currency"
-	"github.com/helios-ag/sberbank-acquiring-go/orders"
+	acquiring "github.com/icechen128/sberbank"
+	"github.com/icechen128/sberbank/currency"
+	"github.com/icechen128/sberbank/orders"
 )
 
 func main() {

@@ -1,8 +1,8 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
-[![Go](https://github.com/helios-ag/sberbank-acquiring-go/actions/workflows/go.yml/badge.svg)](https://github.com/helios-ag/sberbank-acquiring-go/actions/workflows/go.yml)
-[![codecov](https://codecov.io/gh/helios-ag/sberbank-acquiring-go/branch/master/graph/badge.svg)](https://codecov.io/gh/helios-ag/sberbank-acquiring-go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/helios-ag/sberbank-acquiring-go)](https://goreportcard.com/report/github.com/helios-ag/sberbank-acquiring-go)
-[![Godocs](https://img.shields.io/badge/golang-documentation-blue.svg)](https://godoc.org/github.com/helios-ag/sberbank-acquiring-go)
+[![Go](https://github.com/icechen128/sberbank/actions/workflows/go.yml/badge.svg)](https://github.com/icechen128/sberbank/actions/workflows/go.yml)
+[![codecov](https://codecov.io/gh/icechen128/sberbank/branch/master/graph/badge.svg)](https://codecov.io/gh/icechen128/sberbank)
+[![Go Report Card](https://goreportcard.com/badge/github.com/icechen128/sberbank)](https://goreportcard.com/report/github.com/icechen128/sberbank)
+[![Godocs](https://img.shields.io/badge/golang-documentation-blue.svg)](https://godoc.org/github.com/icechen128/sberbank)
 # Sberbank Acquiring API Wrapper
 
 [Sberbank Acquiring API](https://securepayments.sberbank.ru/wiki/doku.php/integration:api:start) written in Go
@@ -20,8 +20,8 @@ Then, reference stripe-go in a Go program with `import`:
 
 ``` go
 import (
-	"github.com/helios-ag/sberbank-acquiring-go/acquiring"
-	"github.com/helios-ag/sberbank-acquiring-go/currency"
+	"github.com/icechen128/sberbank/acquiring"
+	"github.com/icechen128/sberbank/currency"
 )
 ```
 
@@ -31,7 +31,7 @@ toolchain will resolve and fetch the module automatically.
 Alternatively, you can also explicitly `go get` the package into a project:
 
 ```bash
-go get -u github.com/helios-ag/sberbank-acquiring-go
+go get -u github.com/icechen128/sberbank
 ```
 
 ## Getting started
@@ -54,8 +54,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/helios-ag/sberbank-acquiring-go/acquiring"
-	"github.com/helios-ag/sberbank-acquiring-go/currency"
+	"github.com/icechen128/sberbank/acquiring"
+	"github.com/icechen128/sberbank/currency"
 )
 
 func main() {

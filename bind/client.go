@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	acquiring "github.com/helios-ag/sberbank-acquiring-go"
-	"github.com/helios-ag/sberbank-acquiring-go/endpoints"
-	"github.com/helios-ag/sberbank-acquiring-go/schema"
+	acquiring "github.com/icechen128/sberbank"
+	"github.com/icechen128/sberbank/endpoints"
+	"github.com/icechen128/sberbank/schema"
 	"net/http"
 	"regexp"
 )

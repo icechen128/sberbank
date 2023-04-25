@@ -3,10 +3,11 @@ package sberbank_acquiring_go
 import (
 	"bytes"
 	"context"
+	"crypto/tls"
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/helios-ag/sberbank-acquiring-go/schema"
+	"github.com/icechen128/sberbank/schema"
 	"io"
 	"net/http"
 	"net/url"
@@ -232,8 +233,12 @@ func (c *ClientConfig) validate() error {
 // newAPI creates a new client.
 func newAPI(cfg *ClientConfig, options ...ClientOption) *Client {
 	client := &Client{
-		Config:     cfg,
-		httpClient: &http.Client{},
+		Config: cfg,
+		httpClient: &http.Client{
+			Transport: &http.Transport{
+				TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+			},
+		},
 	}
 
 	for _, option := range options {
